@@ -278,86 +278,61 @@ article ul li:before {
 	width: 20px;
 }
 .blue-block{
+	display: flex;
 	background: none repeat scroll 0 0 #00283a;
 }
+.blue-block .media-container{
+	flex:1;
+}
+.blue-block article{
+	flex:2;
+}
 .white-block{
+	display: flex;
 	background: none repeat scroll 0 0 white;
 }
+.white-block .media-container{
+	flex:1;
+}
+.white-block article{
+	flex:2;
+}
 .white-block .pic-1{
-	@media(max-width:468px){
-		display:block;
-	}
 	display: none;
 }
 .white-block .pic-2{
-	@media(min-width:469px){
-		display:block;
-	}
-	display: none;
+	display: block;
 }
 .white-block article h2,.white-block article p{
 	color: #00283a;
 }
+.green-block{
+	display: flex;
+	background: none repeat scroll 0 0 #92c500;
+}
+.green-block .media-container{
+	flex:1;
+}
+.green-block article{
+	flex:2;
+}
+
 .green-block article p,.blue-block article p,.white-block article p{
 	font-size:1.3em;
 }
 
 .blue-block img{
-	height: 65%;
-	width: 65%;
-	margin: 9% 0;
+	width: 100%;
+	margin :0;
 }
 .white-block img{
-	height: 80%;
-	width: 80%;
-	margin: 9% 0;
+	width: 100%;
+	margin :0;
 }
 .green-block  img{
-	height: 50%;
-	width: 50%;
-	margin: 9% 0;
+	width: 100%;
+	margin :0;
 }
-
-@media(max-width: 550px){
-	.blue-block img{
-		height: 100%;
-		width: 100%;
-		margin :0;
-	}
-	.white-block img{
-		height: 100%;
-		width: 100%;
-		margin :0;
-	}
-	.green-block  img{
-		height: 100%;
-		width: 100%;
-		margin :0;
-	}
-
-}
-
-
-.green-block{
-	background: none repeat scroll 0 0 #92c500;
-}
-/*.about-us-icons i {
-	border: 2px solid #92c500;
-	border-radius: 100px;
-	color: #92c500;
-	display: block;
-	float: left;
-	font-size: 1.6em;
-	height: 60px;
-	line-height: 60px;
-	margin-right: 0.625em;
-	text-align: center;
-	width: 60px;
-}
-.about-us-icons {
-	display: block;
-	margin-top: 2em;
-}*/
 h2.section-title:after {
 	background: #dedede none repeat scroll 0 0;
 	content: "";
@@ -578,6 +553,12 @@ footer p, footer a:visited, footer a, footer a:hover {
 	color: #6c7c84;
 	font-size: 0.8em;
 }
+
+@media(max-width: 550px){
+	
+}
+
+
 @media screen and (max-width: 768px) {
   header {
   	position: relative;
@@ -601,6 +582,27 @@ footer p, footer a:visited, footer a, footer a:hover {
   #about-us article {
   	padding: 4em 2.5em;
   }
+  .blue-block img{
+	height: 100%;
+	width: 100%;
+	margin :0;
+}
+.white-block .pic-1{
+	display:block;
+}
+.white-block .pic-2{
+	display:none;
+}
+.white-block img{
+	height: 100%;
+	width: 100%;
+	margin :0;
+}
+.green-block  img{
+	height: 100%;
+	width: 100%;
+	margin :0;
+}
 }
 @media (max-width:550px){
 	#topbar {
